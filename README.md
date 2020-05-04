@@ -1,4 +1,5 @@
-# Asynchronous Processing
+# Summary
+This repository offers some sample code for JavaScript Basic series of Torasemi
 
 ## Demo Environment
 OS: macOS Mojave (10.14.6)  
