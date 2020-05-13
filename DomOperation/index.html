@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Operation Demo</title>
+  <script src="getDomElement.js" type="text/javascript" defer></script>
+</head>
+<body>
+<main>
+  <div id="hoge">hogeっていうidが指定されているよ！</div>
+  <button onclick="getDomElementModule.getId('hoge')">idで要素を指定して取得する</button>
+
+  <div style="margin: 16px"></div>
+
+  <div class="foo">fooっていうクラスが指定されたdiv要素1</div>
+  <div class="foo">fooっていうクラスが指定されたdiv要素2</div>
+  <div class="bar">barっていうクラスが指定されたdiv要素</div>
+  <button onclick="getDomElementModule.getClasses('foo')">class要素を指定して取得する</button>
+
+  <div style="margin: 16px"></div>
+
+  <form name="demoForm">
+    <div>
+      <label for="title-id">タイトル</label>
+      <input id="title-id" name="title" type="text"/>
+    </div>
+
+    <div>
+      <label for="description-id">説明</label>
+      <input id="description-id" name="description" type="text"/>
+    </div>
+
+    <!--  チェックボックス  -->
+    <div>
+      <label for="js">JavaScript</label>
+      <input id="js" name="languages" type="checkbox" value="JavaScript">
+      <label for="ts">TypeScript</label>
+      <input id="ts" name="languages" type="checkbox" value="TypeScript">
+      <label for="php">PHP</label>
+      <input id="php" name="languages" type="checkbox" value="PHP">
+      <label for="ruby">Ruby</label>
+      <input id="ruby" name="languages" type="checkbox" value="Ruby">
+    </div>
+  </form>
+  <button onclick="getDomElementModule.submitForm()">Form要素を取得する</button>
+</main>
+</body>
+</html>

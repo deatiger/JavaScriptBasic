@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>即時関数のデモ</title>
+<!--  <script src="./GlobalScope/header.js" type="text/javascript" defer></script>-->
+<!--  <script src="./GlobalScope/footer.js" type="text/javascript" defer></script>-->
+  <script src="./EncapsulatedScope/header.js" type="text/javascript" defer></script>
+  <script src="./EncapsulatedScope/footer.js" type="text/javascript" defer></script>
+</head>
+<body>
+<header>
+  <div>
+    ここはヘッダーです。
+    <button onclick="headerModule.countUp()">カウントアップ！</button>
+    <button onclick="headerModule.selectMenu()">メニューを選択</button>
+  </div>
+</header>
+<main>
+  <div>
+    ここはメインです。
+  </div>
+</main>
+<footer>
+  <div>
+    ここはフッターです。
+    <button onclick="footerModule.selectMenu()">メニューを選択</button>
+  </div>
+</footer>
+</body>
+</html>
