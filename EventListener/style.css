@@ -1,0 +1,32 @@
+.input__area {
+    position: relative;
+    height: 180px;
+    width: 320px;
+}
+
+.input__area img {
+    height: 180px;
+    width: 320px;
+}
+
+.input__area input {
+    display: none;
+}
+
+.input-button::before {
+    background: #616161;
+    border-radius: 50%;
+    color: #fff;
+    content: "＋";
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.9;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    line-height: 3rem;
+    height: 3rem;
+    text-align: center;
+    width: 3rem;
+}
